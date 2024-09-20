@@ -145,6 +145,7 @@ nav .logo {
 }
 
 /* About Section */
+/* About Section */
 #about {
     padding: 4rem 1rem;
     background-color: #f9f9f9;
@@ -165,7 +166,7 @@ nav .logo {
 .about-content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start; /* Changed from center to flex-start */
     justify-content: center;
 }
 
@@ -174,12 +175,14 @@ nav .logo {
     height: auto;
     border-radius: 50%;
     margin: 1rem;
+     
 }
 
 .about-text {
     flex: 1;
     min-width: 300px;
     margin: 1rem;
+     
 }
 
 .about-text h3 {
@@ -194,7 +197,6 @@ nav .logo {
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
-
 /* Footer */
 footer {
     background: #333;
@@ -233,9 +235,13 @@ footer {
 
     .about-content {
         flex-direction: column;
+        align-items: center;
+
     }
 
     .about-content img {
         margin-bottom: 2rem;
+         
+
     }
 }
